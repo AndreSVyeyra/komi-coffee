@@ -1,0 +1,201 @@
+/* Importa a fonte Nunito do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* Remove margens e paddings padrão de todos os elementos e define a fonte padrão como Nunito */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Define que o elemento html ocupa 100% da altura da tela */
+html {
+  height: 100%;
+}
+
+/* Define que o body também ocupa 100% da altura da tela e remove margem */
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Estiliza o container principal que centraliza e limita a largura da página */
+#container {
+  height: 100%;
+  width: 992px;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+  margin: auto;
+}
+
+/* Estiliza o cabeçalho da página */
+header {
+  background-color: white;
+  text-align: center;
+
+  /* Oculta o título h1 no header */
+  h1 {
+    display: none;
+  }
+
+  /* Adiciona espaçamento nas imagens dentro do header */
+  img {
+    padding: 10px 0px 10px 0px;
+  }
+
+  /* Estiliza a barra de navegação */
+  nav {
+    background-color: #532c23;
+    width: 100%;
+    padding: 10px 0px;
+
+    /* Estiliza a lista dentro do nav para alinhar os itens horizontalmente */
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      gap: 25px;
+    }
+
+    /* Remove o estilo padrão dos itens da lista */
+    li {
+      list-style: none;
+    }
+
+    /* Estiliza os links dentro do nav */
+    a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+  }
+}
+
+/* Estiliza o conteúdo principal da página */
+main {
+  /* Estiliza o título principal dentro do main */
+  h1 {
+    text-align: center;
+    font-size: 70px;
+    color: #532c23;
+    font-weight: 400;
+    padding: 20px 0;
+
+    /* Estiliza o span dentro do h1 para destacar */
+    span {
+      font-weight: 700;
+    }
+  }
+
+  /* Estiliza o banner da página */
+  .banner {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    background-image: url(images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+
+    /* Estiliza o círculo dentro do banner */
+    .circle {
+      background-color: #532c238b;
+      border-radius: 50%;
+      height: 80%;
+      aspect-ratio: 1 / 1;
+      box-sizing: border-box;
+      align-content: center;
+      text-align: left;
+      margin-left: 25px;
+      padding-left: 30px;
+      padding-right: 15px;
+
+      /* Estiliza o texto dentro do círculo */
+      p {
+        color: white;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+/* Estiliza a seção que agrupa múltiplas sessões */
+.sections {
+  display: flex;
+
+  /* Estiliza a seção de mapa */
+  #mapSection > div {
+    flex-direction: column;
+
+    /* Adiciona margem superior no texto do mapa */
+    .text {
+      margin-top: 15px;
+    }
+  }
+
+  /* Estiliza as seções internas */
+  section {
+    width: 50%;
+    padding: 20px;
+
+    /* Estiliza o título da seção */
+    .sectionTitle {
+      color: #532c23;
+      font-style: italic;
+      font-weight: 700;
+    }
+
+    /* Ajusta imagens dentro da seção */
+    img {
+      object-fit: contain;
+    }
+
+    /* Adiciona margem superior nas divs dentro da seção */
+    > div {
+      margin-top: 15px;
+    }
+
+    /* Estiliza as divs internas */
+    div {
+      display: flex;
+      flex-direction: row;
+
+      /* Estiliza parágrafos dentro das divs */
+      p {
+        font-size: 14px;
+        line-height: 15px;
+      }
+
+      /* Estiliza a classe de texto */
+      .text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        /* Estiliza links dentro da classe de texto */
+        a {
+          color: #532c23;
+        }
+      }
+    }
+  }
+}
+
+/* Estiliza o rodapé da página */
+footer {
+  border-top: 1px solid #e3e3e3;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-right: 15px;
+  text-align: right;
+  background-color: #fff;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

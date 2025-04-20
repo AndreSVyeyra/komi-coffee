@@ -1,0 +1,113 @@
+<!-- Define o tipo de documento e a linguagem do site -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta charset="UTF-8" />
+    <!-- Responsividade para diferentes tamanhos de tela -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Garante compatibilidade com versões antigas do IE -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Título da página -->
+    <title>Tarefa 16</title>
+    <!-- Importa o arquivo de estilos externo -->
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+
+  <body>
+    <!-- Container principal da página -->
+    <div id="container">
+      <!-- Cabeçalho da página -->
+      <header>
+        <!-- Título principal (invisível no estilo CSS) -->
+        <h1>Kombi Coffee</h1>
+        <!-- Logotipo da empresa -->
+        <img src="images/logo_kombi_coffe.png" alt="logo Kombi Coffee" />
+
+        <!-- Navegação do site -->
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Local</a></li>
+            <li><a href="#">Cardápio</a></li>
+            <li><a href="#">Eventos</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Conteúdo principal -->
+      <main>
+        <!-- Título principal com destaque na palavra "café" -->
+        <h1>O <span>café</span> que chega até você!</h1>
+
+        <!-- Seção de banner com uma mensagem promocional -->
+        <div class="banner">
+          <div class="circle">
+            <p>Cafés super selecionados e com muito mais sabor</p>
+          </div>
+        </div>
+
+        <!-- Seções laterais -->
+        <div class="sections">
+          <!-- Seção sobre tipos de café -->
+          <section>
+            <h2 class="sectionTitle">Escolha o seu café</h2>
+            <div>
+              <!-- Imagem ilustrativa do café -->
+              <img
+                src="images/cafe.png"
+                alt="grãos de café dentro da xícara"
+                title="grãos de café dentro da xícara"
+              />
+              <div class="text">
+                <p>
+                  Hoje em dia, café bom não é só aquele feito no coador de pano
+                  que nossas avós faziam - um novo mundo se abre para nós em
+                  matéria de tipos de grãos, procedência, tipos de torras e
+                  jeitos de preparar a bebida, que é tão popular na mesa dos
+                  brasileiros.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Seção sobre a localização da loja -->
+          <section id="mapSection">
+            <h2 class="sectionTitle">Onde encontrar a loja</h2>
+            <div>
+              <!-- Mapa incorporado do Google Maps -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1456.493867204295!2d-43.17784761784685!3d-22.906612826220336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5fd24e0bdd%3A0x99447fc2607f1de1!2sFaculdade%20Infnet%20-%20Faculdade%20de%20Engenharia%20de%20Software%2C%20Engenharia%20da%20Computa%C3%A7%C3%A3o%2C%20Engenharia%20de%20Dados%20e%20IA%20%7C%20MBA%20e%20P%C3%B3s%20em%20TI!5e0!3m2!1spt-BR!2sbr!4v1742669898807!5m2!1spt-BR!2sbr"
+                width="400"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+
+              <!-- Informações adicionais sobre o local -->
+              <div class="text">
+                <p>O Kombi Coffe é móvel.</p>
+                <strong>
+                  <p><a href="#">Veja onde</a> você pode encontrar o carro.</p>
+                </strong>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- Fecha div.sections -->
+      </main>
+
+      <!-- Rodapé da página -->
+      <footer>
+        <p>Andre dos Santos Vieira TP3 - Programação Web</p>
+      </footer>
+    </div>
+    <!-- Fecha div#container -->
+
+    <!-- Importa o script JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
